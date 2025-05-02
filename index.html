@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>produtos</title>
+  </head>
+  <body class="h-screen">
+    <main class="bg-blue-50 h-full p-10">
+      <h1 class="font-bold text-2x1 text-center">Lista de produtos</h1>
+      <div class="rounded-lg p-2">
+        <table class="w-full rounded-lg overflow-hidden">
+          <thead>
+            <tr class="bg-blue-200 font-bold text-left">
+              <th class="p-2">Imagem</th>
+              <th>nome</th>
+              <th>Preço</th>
+              <th>frete Grátis</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white" id="tabela-produtos"></tbody>
+        </table>
+      </div>
+      <div>
+        <button onclick="productCard()">Mostrar</button>
+      </div>
+    </main>
+
+    <script src="aulamap.js"></script>
+  </body>
 </html>
